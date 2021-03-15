@@ -8,10 +8,10 @@ function function1() {
 function function2() {
   var result = "";
   if (typeof myGlobalVariable != "undefined") {
-    result += "myGlobalVariable" + myGlobalVariable;
+    result += "myGlobalVariable: " + myGlobalVariable;
   }
   if (typeof notGlobalVariable != "undefined") {
-    result += "notGlobalVariable" + notGlobalVariable;
+    result += " notGlobalVariable: " + notGlobalVariable;
   }
   console.log(result);
 }
@@ -20,5 +20,5 @@ function1();
 function2();
 module.exports = {
   function1,
-  function2
+  function2,
 };
